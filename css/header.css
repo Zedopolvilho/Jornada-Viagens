@@ -26,9 +26,15 @@ input[type=checkbox]:checked ~ nav
     background-color:var(--background-tertiary-color)
 }
 
+label
+{
+    cursor:pointer;
+}
+
 .list-nav
 {
     list-style:none;
+    padding:0 50px;
 }
 
 .list-nav li a
@@ -37,10 +43,7 @@ input[type=checkbox]:checked ~ nav
     color:var(--text-primary-color);
 }
 
-label
-{
-    cursor:pointer;
-}
+
 
 nav
 {
