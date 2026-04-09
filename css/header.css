@@ -1,76 +1,105 @@
 header
 {
     width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--background-tertiary-color);
-    padding: 0 48px;
     height: 138px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color:var(--background-tertiary-color);
+    padding:0 48px;
     position:relative;
 }
 
-
-.logo
-{
-    width:64px;
-    height: 68px;
-}
-
-
-
-.list-links nav
+.logo-desktop
 {
     display:none;
 }
 
-.list-links input[type=checkbox]:checked ~ nav
+.nav-list
+{
+    display:none;
+}
+
+.nav-list ul
+{
+    list-style:none;
+}
+
+.nav-list ul li
+{
+    margin:16px 0;
+}
+
+.nav-list ul li a
+{
+    text-decoration: none;
+    color:var(--text-primary-color);
+}
+
+input[type=checkbox]:checked ~ nav
 {
     display:block;
     position:absolute;
     top:100%;
     left:0;
     width:100%;
-    background-color: var(--background-tertiary-color);
-}
-
-.list-links nav ul li
-{
-    margin: 16px 0;
-}
-
-.list-links nav ul li a
-{
-    text-decoration:none;
-    color:var(--text-primary-color);
-    font-size:24px;
-    font-weight: var(--title-weight);
+    background-color:var(--background-tertiary-color);
+    padding:0 48px;
 }
 
 @media screen and (min-width:768px)
 {
-    .list-links label
+    header
+    {
+        padding:0 60px;
+    }
+
+    .menu
     {
         display:none;
     }
 
-    .list-links nav
+    .nav-list
+    {  
+        display:block;
+    }
+
+    .nav-list ul
+    {
+        display:flex;
+        flex-direction:row;
+        gap:40px;
+    }
+}
+
+@media screen and (min-width:1440px)
+{
+    header
+    {
+        padding:0 120px;
+    }
+
+    .logo-desktop
     {
         display:block;
     }
 
-    .list-links nav ul
+    .logo-mobile
     {
-        display:flex;
-        flex-direction: row;
-        width:467px;
-        height: 29px;
-        justify-content: space-between;
+        display:none;
     }
 
-    .list-links nav ul li
+    .nav-list ul li a:hover
     {
-        margin: 0;
+        color:var(--primary-color);
+    }
+}
+
+@media screen and (min-width:2560px)
+{
+    header
+    {
+        padding:0 213px;
     }
 }
