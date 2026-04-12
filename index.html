@@ -8,36 +8,43 @@
   </head>
   <body>
     <header>
-      <a class="logo-mobile" href="index.html" title="Voltar ao menu"
+      <a class="logo" href="index.html" title="Voltar ao menu"
         ><img
+          class="img-mobile"
           src="img/Logo-jornada-viagens-branca.png"
-          alt="Logo Jornada Viagens"
-      /></a>
-
-      <a class="logo-desktop" href="index.html" title="Voltar ao menu"
-        ><img
+          alt="Logo Jornada Viagens da cor branca"
+        />
+        <img
+          class="img-desktop"
           src="img/logo-desktop.png"
-          alt="Logo Jornada Viagens"
-      /></a>
+          alt="Logo Jornada Viagens da cor branca"
+        />
+      </a>
 
-      <input type="checkbox" id="menu" hidden />
-      <label class="menu" for="menu"><img src="img/menu.png" alt="Menu" /></label>
-
-      <nav class="nav-list">
-        <ul>
-          <li><a href="#" title="Blog">Blog</a></li>
-          <li><a href="#" title="Pacote de viagem">Pacote de viagem</a></li>
-          <li><a href="#" title="Contato">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="nav-menu">
+        <label for="button"><img src="img/menu.png" alt="menu" /></label>
+        <input type="checkbox" id="button" hidden />
+        <nav class="nav-list">
+          <ul>
+            <li><a href="#" title="Blog">Blog</a></li>
+            <li>
+              <a href="#" title="Pacotes de viagens">Pacotes de Viagens</a>
+            </li>
+            <li><a href="#" title="Contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="hero-img"></div>
+        <div class="hero-img">
+        </div>
 
         <h2>Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!</h2>
+
       </section>
     </main>
+
   </body>
 </html>
