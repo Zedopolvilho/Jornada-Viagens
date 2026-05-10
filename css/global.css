@@ -21,9 +21,12 @@
     --background-primary-color:#000000;
 
     --text-weight:500;
+    --title-weight:400;
 }
 
 body
 {
     font-family:"Montserrat",sans-serif;
+    color:var(--primary-color);
 }
+
