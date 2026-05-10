@@ -22,6 +22,7 @@
 
     --text-weight:500;
     --title-weight:400;
+    --text-weight-2:700;
 }
 
 body
@@ -30,3 +31,26 @@ body
     color:var(--primary-color);
 }
 
+.title
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:32px;
+    gap:16px;
+}
+
+.title h2
+{
+    font-size:28px;
+    color:black;
+    font-weight:var(--text-weight-2);
+}
+
+.title hr
+{
+    width:180px;
+    height: 4px;
+    background-color:var(--secondary-color);
+    border:none;
+}
