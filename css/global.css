@@ -19,6 +19,7 @@
     --secondary-color:#8f0101;
 
     --background-primary-color:#000000;
+    --background-secondary-color:#b81515;
 
     --text-weight:500;
     --title-weight:400;
@@ -45,6 +46,8 @@ body
     font-size:28px;
     color:black;
     font-weight:var(--text-weight-2);
+    width:312px;
+    text-align: center;
 }
 
 .title hr
@@ -53,4 +56,19 @@ body
     height: 4px;
     background-color:var(--secondary-color);
     border:none;
+}
+
+.button
+{
+    width:280px;
+    height: 64px;
+    background-color:var(--background-secondary-color);
+    display:inline-block;
+    text-align: center;
+    line-height: 64px;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size:20px;
+    font-weight:var(--text-weight-2);
+    border-radius:8px;
 }
